@@ -1,0 +1,39 @@
+{
+  "name": "selling-h5",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "core-js": "^2.6.5",
+    "js-cookie": "^2.2.0",
+    "vant": "^1.6.6",
+    "vue": "^2.6.10",
+    "vue-clipboard2": "^0.3.0",
+    "vue-i18n": "^8.8.2",
+    "vue-router": "^3.0.3",
+    "vue-seamless-scroll": "^1.1.16",
+    "vuex": "^3.0.1",
+    "vuex-persistedstate": "^2.5.4"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.8.0",
+    "@vue/cli-plugin-eslint": "^3.8.0",
+    "@vue/cli-service": "^3.8.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "babel-plugin-import": "^1.11.0",
+    "compression-webpack-plugin": "^2.0.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.6.10",
+    "uglifyjs-webpack-plugin": "^2.1.2",
+    "vconsole": "^3.3.0",
+    "postcss-pxtorem": "^4.0.1"
+  }
+}
