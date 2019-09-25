@@ -16,9 +16,21 @@
   import Vue_filter from './vue_filter.vue'
   import Vue_mixin from './vue_filter.vue'
   import Vm_options from './vm_options.vue'
+  import Vue_observable from './vue_observable.vue'
+  import Vue_version  from './vue_version .vue'
 
   export default {
-    components: {Vue_set, Vue_nextTick, Vue_delete, Vue_directive, Vue_filter, Vue_mixin,Vm_options},
+    components: {
+      Vue_set,
+      Vue_nextTick,
+      Vue_delete,
+      Vue_directive,
+      Vue_filter,
+      Vue_mixin,
+      Vm_options,
+      Vue_observable,
+      Vue_version ,
+    },
     data() {
       return {
         demoResult: null,

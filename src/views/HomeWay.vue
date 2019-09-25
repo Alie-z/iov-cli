@@ -8,6 +8,7 @@
         <van-cell-group>
           <van-cell
               v-for="(list,index) in item.list"
+              :icon="list.path.length> 0 ? 'eye':'checked'"
               :key="index"
               :title="list.name"
               @click="_handleEX(list.path,list.name)"

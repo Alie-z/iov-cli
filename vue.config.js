@@ -1,5 +1,5 @@
 const CompressionPlugin = require('compression-webpack-plugin')
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+// const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 //TODO uglifyjs 和vue-socialmedia-share 同时使用会打包失败
 module.exports = {
   publicPath: './', // 默认'/'，部署应用包时的基本 URL
@@ -17,20 +17,20 @@ module.exports = {
             minRatio: 0.8,
           }),
         ],
-        optimization: {
-          minimizer: [
-            new UglifyJsPlugin({
-              uglifyOptions: {
-                compress: {
-                  warnings: false,
-                  drop_console: true,
-                  drop_debugger: false,
-                  pure_funcs: ['console.log']//移除console
-                }
-              }
-            })
-          ]
-        }
+        // optimization: {
+        //   minimizer: [
+        //     new UglifyJsPlugin({
+        //       uglifyOptions: {
+        //         compress: {
+        //           warnings: false,
+        //           drop_console: true,
+        //           drop_debugger: false,
+        //           pure_funcs: ['console.log']//移除console
+        //         }
+        //       }
+        //     })
+        //   ]
+        // }
       }
     }
   },
