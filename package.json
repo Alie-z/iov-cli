@@ -29,7 +29,7 @@
     "babel-plugin-import": "^1.11.0",
     "compression-webpack-plugin": "^2.0.0",
     "eslint-plugin-vue": "^5.0.0",
-    "node-sass": "^4.9.0",
+    "node-sass": "^4.13.1",
     "sass-loader": "^7.1.0",
     "vue-template-compiler": "^2.6.10",
     "uglifyjs-webpack-plugin": "^2.1.2",
