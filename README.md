@@ -73,6 +73,18 @@ $ iov delete 模板名<template-name>
 npm run release
 ```
 
+### 查看全局 npm
+
+```
+npm ls --global
+```
+
+### 卸载全局 npm
+
+````
+npm rm --global xxx
+```
+
 ## Changelog
 
 [Changelog](https://github.com/Alie-z/iov-cli/blob/master/CHANGELOG.md)
@@ -81,3 +93,4 @@ npm run release
 
 - 优化 iov-swan 模板
 - 提供可选项配置
+````
