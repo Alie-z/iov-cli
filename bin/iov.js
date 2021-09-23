@@ -29,7 +29,7 @@ function checkNodeVersion(wanted, cliName) {
 }
 
 // 检测node版本
-checkNodeVersion(requiredNodeVersion, '@easy/cli');
+checkNodeVersion(requiredNodeVersion, '@iov/cli');
 
 program
   .version(require('../package').version, '-v, --version') // 版本
@@ -42,7 +42,7 @@ program
   .action((templateName, projectName, cmd) => {
     // 输入参数校验
     validateArgsLen(process.argv.length, 5);
-    require('../lib/easy-create')(lowercase(templateName), projectName);
+    require('../lib/iov-create')(lowercase(templateName), projectName);
   });
 
 // 添加一个项目模板
@@ -88,12 +88,12 @@ enhanceErrorMessages('missingArgument', argsName => {
 
 program.parse(process.argv); // 把命令行参数传给commander解析
 
-// 输入easy显示帮助信息
+// 输入iov显示帮助信息
 if (!process.argv.slice(2).length) {
   program.outputHelp();
 }
 
-// easy支持的命令
+// iov支持的命令
 function suggestCommands(cmd) {
   const avaliableCommands = program.commands.map(cmd => {
     return cmd._name;

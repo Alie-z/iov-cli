@@ -1,7 +1,7 @@
 {
   "name": "iov-cli",
-  "version": "1.0.0",
-  "description": "a simple CLI for scaffolding of FE",
+  "version": "1.0.1",
+  "description": "a simple CLI for scaffolding of iov FE",
   "main": "index.js",
   "scripts": {
     "lint": "eslint --ext .js ./",

@@ -1,3 +1,10 @@
+/*
+ * @file:
+ * @Author: meijuntao@baidu.com
+ * @Date: 2021-09-17 18:02:21
+ * @Description:
+ * @FilePath: /iov-cli/scripts/release.js
+ */
 const { execSync } = require('child_process');
 const semver = require('semver');
 const inquirer = require('inquirer');
@@ -5,7 +12,7 @@ const inquirer = require('inquirer');
 const currentVerison = require('../package.json').version;
 
 const release = async () => {
-  console.log(`Current easy cli version is ${currentVerison}`);
+  console.log(`Current iov cli version is ${currentVerison}`);
   const releaseActions = ['patch', 'minor', 'major'];
   const versions = {};
   // 生成预发布版本标示
